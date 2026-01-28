@@ -1,0 +1,99 @@
+.hero {
+  background: linear-gradient(135deg, #ffb300, #ff8f00);
+  padding: 80px 0;
+  color: #000;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-content h1 span {
+  color: #000;
+}
+
+.price {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.services {
+  background: #fff;
+  padding: 12px 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hotline-box {
+  background: #ff9800;
+  padding: 16px;
+  width: fit-content;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.hotline-box h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #fff;
+}
+
+.btn-book {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 14px 28px;
+  font-weight: 700;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.hero-image {
+  flex: 1;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.car-red {
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .car-red {
+    position: static;
+    width: 80%;
+    margin-top: 20px;
+  }
+}
