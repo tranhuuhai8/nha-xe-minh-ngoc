@@ -1,10 +1,10 @@
-/* SECTION NỀN VÀNG */
+/* ===== SECTION NỀN VÀNG ===== */
 .services {
   padding: 80px 0;
   background: linear-gradient(135deg, #ffb300, #ff9800);
 }
 
-/* KHUNG TRẮNG NỔI */
+/* ===== KHUNG TRẮNG ===== */
 .services-container {
   max-width: 1200px;
   margin: auto;
@@ -15,12 +15,12 @@
   text-align: center;
 }
 
-/* TITLE */
+/* ===== TITLE ===== */
 .services-title {
   font-size: 32px;
   font-weight: 800;
   margin-bottom: 10px;
-  color: #333;
+  color: #222;
 }
 
 .services-subtitle {
@@ -29,33 +29,30 @@
   margin-bottom: 40px;
 }
 
-/* LIST */
+/* ===== LIST ===== */
 .services-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
-/* CARD */
+/* ===== CARD ===== */
 .service-item {
   background: #fffaf3;
-  padding: 30px 20px;
+  padding: 30px 22px;
   border-radius: 14px;
   box-shadow: 0 10px 25px rgba(255, 152, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(255, 152, 0, 0.35);
-}
-
+/* ICON */
 .service-item .icon {
   font-size: 36px;
   display: block;
   margin-bottom: 16px;
 }
 
+/* TITLE CARD */
 .service-item h3 {
   font-size: 18px;
   font-weight: 700;
@@ -63,13 +60,20 @@
   color: #e65100;
 }
 
+/* TEXT */
 .service-item p {
   font-size: 15px;
   color: #444;
   line-height: 1.5;
 }
 
-/* RESPONSIVE */
+/* HOVER */
+.service-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(255, 152, 0, 0.35);
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 992px) {
   .services-list {
     grid-template-columns: repeat(2, 1fr);
@@ -77,16 +81,29 @@
 }
 
 @media (max-width: 576px) {
+  .services {
+    padding: 60px 0;
+  }
+
   .services-container {
     padding: 40px 20px;
+  }
+
+  .services-title {
+    font-size: 26px;
+    line-height: 1.35;
+  }
+
+  .services-subtitle {
+    font-size: 15px;
+    margin-bottom: 32px;
   }
 
   .services-list {
     grid-template-columns: 1fr;
   }
-}
-@media (max-width: 576px) {
-  .services {
-    padding: 60px 0;
+
+  .service-item {
+    padding: 26px 18px;
   }
 }

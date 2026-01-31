@@ -1,24 +1,27 @@
 .advantages {
   background: linear-gradient(135deg, #ff9800, #ffb300);
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
 .advantages-container {
   max-width: 1200px;
   margin: auto;
+  padding: 0 24px;
 }
 
+/* TITLE */
 .advantages-title {
   text-align: center;
   color: #fff;
-  font-size: 32px;
-  font-weight: 800;
-  margin-bottom: 50px;
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 56px;
 }
 
+/* CONTENT */
 .advantages-content {
   display: flex;
-  gap: 40px;
+  gap: 48px;
   align-items: center;
 }
 
@@ -32,10 +35,12 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 18px 20px;
-  margin-bottom: 16px;
-  border-radius: 8px;
-  font-size: 18px;
+  padding: 20px 22px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  font-size: 17px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .adv-item span {
@@ -46,35 +51,68 @@
 .advantages-right {
   flex: 1;
   text-align: center;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .advantages-right img {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  border-radius: 14px;
+  margin-bottom: 22px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
 }
 
+/* BUTTON */
 .hotline-btn {
   display: inline-block;
   background: #ffeb3b;
   color: #000;
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-weight: 800;
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-weight: 900;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .note {
   font-size: 14px;
   color: #333;
 }
+
+/* ===== SCROLL ANIMATION ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(36px);
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-  .advantages-content {
-    flex-direction: column;
+  .advantages {
+    padding: 80px 0;
   }
 
   .advantages-title {
     font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+  }
+
+  .advantages-content {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .adv-item {
+    font-size: 15.5px;
+    padding: 18px 18px;
+  }
+
+  .hotline-btn {
+    width: 100%;
+    text-align: center;
   }
 }

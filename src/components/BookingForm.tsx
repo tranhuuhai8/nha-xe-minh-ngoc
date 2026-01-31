@@ -3,7 +3,7 @@ import './booking-form.css'
 
 export default function BookingForm() {
   return (
-    <section className="booking">
+    <section id="booking" className="booking">
       <div className="booking-container">
 
         {/* LEFT CONTENT */}

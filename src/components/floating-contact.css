@@ -1,0 +1,51 @@
+.floating-contact {
+  position: fixed;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 999;
+}
+
+/* BUTTON CHUNG */
+.fc-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+/* ZALO */
+.fc-circle.zalo {
+  background: #0068ff;
+}
+
+/* PHONE */
+.fc-circle.phone {
+  background: #22c55e;
+}
+
+/* HOVER */
+.fc-circle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .floating-contact {
+    right: 12px;
+  }
+
+  .fc-circle {
+    width: 50px;
+    height: 50px;
+  }
+}

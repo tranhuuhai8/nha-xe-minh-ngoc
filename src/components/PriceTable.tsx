@@ -2,7 +2,7 @@ import './price-table.css'
 
 export default function PriceTable() {
   return (
-    <section className="price-section">
+    <section id="price" className="price-section">
       <div className="price-container">
 
         <h2 className="price-title">BẢNG GIÁ TUYẾN ĐƯỜNG</h2>
