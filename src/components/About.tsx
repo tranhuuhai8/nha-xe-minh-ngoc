@@ -85,7 +85,7 @@ export default function AboutSection() {
             <li>✔ Nhận bao xe, gửi hàng, thuê xe du lịch theo yêu cầu</li>
           </ul>
 
-          <a href="tel:0912203993" className="about-btn">
+          <a href="tel:0912203933" className="about-btn">
             ĐẶT XE NGAY
           </a>
         </div>

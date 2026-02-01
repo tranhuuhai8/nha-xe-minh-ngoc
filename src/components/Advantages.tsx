@@ -94,7 +94,7 @@ export default function Advantages() {
             <img src="noi-that-xe.jpg" alt="Nội thất xe Minh Ngọc" />
 
             <a href="tel:0912203993" className="hotline-btn">
-              GỌI NGAY HOTLINE: <strong>0912 203 993</strong>
+              GỌI NGAY HOTLINE: <strong>0912 203 933</strong>
             </a>
 
             <p className="note">

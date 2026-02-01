@@ -5,7 +5,7 @@ export default function FloatingContact() {
     <div className="floating-contact">
       {/* ZALO */}
       <a
-        href="https://zalo.me/0912203993"
+        href="https://zalo.me/0912203933"
         target="_blank"
         className="fc-circle zalo"
         aria-label="Chat Zalo"

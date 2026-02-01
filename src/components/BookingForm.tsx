@@ -21,7 +21,7 @@ export default function BookingForm() {
           </ul>
 
           <div className="booking-hotline">
-            📞 HOTLINE: <strong>0912 203 993</strong>
+            📞 HOTLINE: <strong>0912 203 933</strong>
           </div>
         </div>
 
