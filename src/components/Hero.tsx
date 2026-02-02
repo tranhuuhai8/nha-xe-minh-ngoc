@@ -10,14 +10,11 @@ export default function Hero() {
     const el = carRef.current
     if (!el) return
 
-    // SCROLL REVEAL – GIỮ NGUYÊN
+    // Scroll reveal – chỉ desktop
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          el.classList.add('show')
-        } else {
-          el.classList.remove('show')
-        }
+        if (window.innerWidth <= 768) return
+        el.classList.toggle('show', entry.isIntersecting)
       },
       { threshold: 0.35 }
     )
@@ -31,10 +28,11 @@ export default function Hero() {
       <div className="hero-bg" />
 
       <div className="hero-container">
-        {/* LEFT */}
+        {/* CONTENT */}
         <div className="hero-content">
           <h1>
-            XE GHÉP <br />
+            XE GHÉP
+            <br />
             <span>HÀ NỘI ⇄ NAM ĐỊNH</span>
           </h1>
 
@@ -52,7 +50,7 @@ export default function Hero() {
           </div>
 
           <div className="hero-actions">
-            <a href="tel:0912203993" className="hero-hotline">
+            <a href="tel:0912203933" className="hero-hotline">
               📞 0912 203 933
             </a>
 
@@ -62,13 +60,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* RIGHT */}
+        {/* CAR */}
         <div ref={carRef} className="hero-image scroll-reveal">
-          <img
-            src="car.png"
-            alt="Xe ghép Minh Ngọc"
-            className="car-pro"
-          />
+          <img src="car.png" alt="Xe ghép Minh Ngọc" className="car-pro" />
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@ export default function Header() {
       <div className="header-container">
         {/* BRAND */}
         <a href="#hero" className="header-brand" onClick={closeMenu}>
-          Nhà xe <strong>Minh Ngọc</strong>
+          Xe ghép <strong>Minh Ngọc</strong>
         </a>
 
         {/* DESKTOP NAV */}
