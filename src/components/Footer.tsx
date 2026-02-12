@@ -15,7 +15,7 @@ export default function Footer() {
 
         <div className="footer-right">
           <p>HOTLINE</p>
-          <a href="tel:0912203993" className="footer-hotline">
+          <a href="tel:0912203933" className="footer-hotline">
             0912 203 993
           </a>
         </div>

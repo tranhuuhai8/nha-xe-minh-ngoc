@@ -7,31 +7,27 @@ export default function FloatingContact() {
       <a
         href="https://zalo.me/0912203933"
         target="_blank"
-        className="fc-circle zalo"
+        rel="noopener noreferrer"
+        className="fc-circle zalo ring-strong"
         aria-label="Chat Zalo"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+          alt="Zalo"
+          className="zalo-logo"
+        />
+      </a>
+
+      {/* PHONE */}
+      <a
+        href="tel:0912203933"
+        className="fc-circle phone ring-strong"
+        aria-label="Gọi điện"
       >
         <svg
           viewBox="0 0 512 512"
           width="26"
           height="26"
-          fill="white"
-          aria-hidden="true"
-        >
-          <path d="M256 32C132.3 32 32 125.1 32 240c0 65.4 34.4 123.8 88.1 161.9-3.8 13.9-13.9 50.3-15.9 58.3-.2.8.1 1.6.8 2.1.4.3.9.5 1.4.5.3 0 .7-.1 1-.2 9.3-4.9 55.4-29.1 74.6-39.4 23.1 6.4 47.6 9.8 73 9.8 123.7 0 224-93.1 224-208S379.7 32 256 32z" />
-          <path d="M352 288H160c-8.8 0-16-7.2-16-16s7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0-64H160c-8.8 0-16-7.2-16-16s7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16z" />
-        </svg>
-      </a>
-
-      {/* PHONE */}
-      <a
-        href="tel:0912203993"
-        className="fc-circle phone"
-        aria-label="Gọi điện"
-      >
-        <svg
-          viewBox="0 0 512 512"
-          width="24"
-          height="24"
           fill="white"
           aria-hidden="true"
         >
