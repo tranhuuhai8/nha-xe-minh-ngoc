@@ -1,0 +1,129 @@
+/* SECTION NỀN VÀNG */
+.booking {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #ff9800, #ffb300);
+}
+
+/* CONTAINER */
+.booking-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+}
+
+/* LEFT INFO */
+.booking-info {
+  flex: 1;
+  color: #000;
+}
+
+.booking-info h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.booking-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.booking-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.booking-info li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.booking-hotline {
+  background: #ffeb3b;
+  padding: 14px 20px;
+  display: inline-block;
+  border-radius: 30px;
+  font-weight: 800;
+}
+
+/* RIGHT FORM */
+.booking-form {
+  flex: 1;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.booking-form h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #e65100;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.booking-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.booking-form button {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #ff9800, #ffb300);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 152, 0, 0.6);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .booking-container {
+    flex-direction: column;
+  }
+
+  .booking-info {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .booking-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .booking-hotline {
+    margin: 0 auto 20px;
+  }
+
+  .booking-form {
+    padding: 30px 20px;
+  }
+}
